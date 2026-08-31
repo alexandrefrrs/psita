@@ -70,7 +70,7 @@
 
                     <!-- Lado Esquerdo (lista de mensagens com data, hora e assunto) -->
                     <div class="lista-mensagens" id="caixa-de-entrada">
-                        
+
                     </div>
 
                     <!-- Lado Direito (onde a mensagem sera lida de fato) -->
@@ -85,6 +85,43 @@
 
             <!-- Card 2 -->
             <div class="grafico-conclusao">
+                <h1 class="texto-correio" style="text-align: center; margin-bottom: 20px;">Progresso</h1>
+
+                <div class="container-grafico">
+
+                    <div class="anel-progresso" id="grafico-curso">
+                        <span class="valor-progresso" id="valor-curso">0%</span>
+                    </div>
+
+                    <div class="legenda-detalhada">
+
+                        <div class="item-legenda">
+                            <div class="grupo-legenda">
+                                <span class="cor-bolinha cor-cursadas"></span>
+                                <span class="texto-legenda">Disciplinas cursadas</span>
+                            </div>
+
+                            <strong id="qtd-cursadas">0</strong>
+                        </div>
+
+                        <div class="item-legenda">
+                            <div class="grupo-legenda">
+                                <span class="cor-bolinha cor-cursando"></span>
+                                <span class="texto-legenda">Disciplinas cursando</span>
+                            </div>
+                            <strong id="qtd-cursando">0</strong>
+                        </div>
+
+                        <div class="item-legenda">
+                            <div class="grupo-legenda">
+                                <span class="cor-bolinha cor-pendentes"></span>
+                                <span class="texto-legenda">Disciplinas pendentes</span>
+                            </div>
+                            <strong id="qtd-pendentes">0</strong>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
 
@@ -92,7 +129,7 @@
 
         <!-- Card 3 -->
         <div class="grade-resumo">
-
+            <h1 class="texto-correio" style="text-align: left; margin-bottom: 20px;">Grade horária</h1>
 
 
         </div>

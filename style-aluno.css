@@ -190,10 +190,6 @@
       font-family: Arial, Helvetica, sans-serif;
    }
 
-
-
-
-
    /* Card grafico de conclusao*/
 
    .grafico-conclusao {
@@ -206,6 +202,91 @@
       padding: 25px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
       border: 1px solid #E5E7EB;
+   }
+
+   .container-grafico {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+   }
+
+   .anel-progresso {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: conic-gradient(rgb(32, 189, 39) 0%, #E5E7EB 0%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+   }
+
+   .anel-progresso::before {
+      content: "";
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      background-color: white;
+      border-radius: 50%;
+   }
+
+   .valor-progresso {
+      position: relative;
+      font-size: 28px;
+      font-weight: bold;
+      color: rgb(23, 36, 53);
+      font-family: Arial, Helvetica, sans-serif;
+   }
+
+   .legenda-detalhada {
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   .item-legenda {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: Arial, Helvetica, sans-serif;
+   }
+
+   .grupo-legenda {
+      display: flex;
+      align-items: center;
+   }
+
+   .cor-bolinha {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 10px;
+   }
+
+   .cor-cursadas {
+      background-color: rgb(197, 255, 110);
+   }
+
+   .cor-cursando {
+      background-color: rgb(50, 78, 114);
+   }
+
+   .cor-pendentes {
+      background-color: #E5E7EB;
+   }
+
+   .texto-legenda {
+      font-size: 14px;
+      color: #6B7280;
+   }
+
+   .item-legenda strong {
+      color: rgb(23, 36, 53);
+      font-size: 15px;
    }
 
    /* Card grade resumida*/
